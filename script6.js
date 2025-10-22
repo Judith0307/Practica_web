@@ -4,7 +4,7 @@ console.log(frutas);
 
 /*Acceder a un elemento del arreglo*/
 console.log(frutas[1]);  //Mostrar Banana
-
+ 
 /*Crear un arreglo para imprimir los meses del año*/
 let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 console.log(meses);
