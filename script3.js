@@ -1,7 +1,7 @@
 /*Operadores*/
 let suma = 10 + 20;
 let resta = 10 - 15;
-let multiplicacion = 5 * 6;
+let multiplicacion = 5 * 6; 
 let division = 40/8;
 
 /*Comparacion*/
