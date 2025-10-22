@@ -4,7 +4,7 @@ let persona = {
     nombre: "Juan",
     edad: 30,
     ciudad: "Madrid"
-};
+}; 
 console.log(persona.nombre); // Imprime "Juan"
 console.log(persona.edad);  // Imprime 30
 console.log(persona.ciudad); // Imprime "Madrid"
