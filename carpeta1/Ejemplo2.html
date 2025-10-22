@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de Países</title>
+  <script src="https://kit.fontawesome.com/bb89ac9ea0.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef2f3;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .country-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .country-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .country-card:hover {
+      transform: scale(1.02);
+    }
+
+    .country-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .country-header i {
+      font-size: 24px;
+      color: #007bff;
+    }
+
+    .country-info p {
+      margin: 5px 0;
+    }
+
+    .country-info i {
+      color: #555;
+      margin-right: 6px;
+    }
+
+    .more-btn {
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .more-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1><i class="fas fa-globe-europe"></i> Lista de Países</h1>
+
+  <div class="country-list">
+    <!-- Peru -->
+    <div class="country-card">
+      <div class="country-header">
+        <h3>Perú</h3>
+      </div>
+      <div class="country-info">
+        <p><i class="fas fa-city"></i> Capital: Lima</p>
+        <p><i class="fas fa-globe"></i> Continente: America del sur</p>
+      </div>
+      <button class="more-btn"><i class="fas fa-arrow-right"></i> Ver más</button>
+    </div>
+
+    <!-- Japón -->
+    <div class="country-card">
+      <div class="country-header">
+        <h3>Japón</h3>
+      </div>
+      <div class="country-info">
+        <p><i class="fas fa-city"></i> Capital: Tokio</p>
+        <p><i class="fas fa-globe-asia"></i> Continente: Asia</p>
+      </div>
+      <button class="more-btn"><i class="fas fa-arrow-right"></i> Ver más</button>
+    </div>
+
+    <!-- Brasil -->
+    <div class="country-card">
+      <div class="country-header">
+        <h3>Brasil</h3>
+      </div>
+      <div class="country-info">
+        <p><i class="fas fa-city"></i> Capital: Brasilia</p>
+        <p><i class="fas fa-globe-americas"></i> Continente: América</p>
+      </div>
+      <button class="more-btn"><i class="fas fa-arrow-right"></i> Ver más</button>
+    </div>
+  </div>
+</body>
+</html>

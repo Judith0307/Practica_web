@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Responsive</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 40vh;
+            }
+            .carousel-caption {
+                font-size: 0.9rem;
+            }
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sección Carousel -->
+<section class="container-fluid p-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/677/302/non_2x/abstract-technology-banner-background.jpg" class="d-block w-100" alt="Imagen 1">
+                <div class="carousel-caption text-center">
+                    <h5>Bienvenido a nuestro sitio</h5>
+                    <p>Este es un ejemplo de carousel elegante y moderno usando Bootstrap 5.</p>
+                    <a href="#seccion" class="btn-custom">Ir a la sección</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/677/302/non_2x/abstract-technology-banner-background.jpg" class="d-block w-100" alt="Imagen 2">
+                <div class="carousel-caption text-center">
+                    <h5>Explora nuestros productos</h5>
+                    <p>Descubre todo lo que tenemos para ti en nuestra tienda online.</p>
+                    <a href="#seccion" class="btn-custom">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/677/302/non_2x/abstract-technology-banner-background.jpg" class="d-block w-100" alt="Imagen 3">
+                <div class="carousel-caption text-center">
+                    <h5>Ofertas exclusivas</h5>
+                    <p>No te pierdas nuestras promociones y descuentos especiales.</p>
+                    <a href="#seccion" class="btn-custom">Aprovecha ahora</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+<!-- Sección de destino -->
+<section id="seccion" class="container py-5">
+    <h2 class="text-center">Bienvenido a la Sección</h2>
+    <p class="text-center">Esta es la sección a la que el botón te llevará.</p>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

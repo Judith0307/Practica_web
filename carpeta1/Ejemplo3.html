@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Online - Productos</title>
+  <script src="https://kit.fontawesome.com/bb89ac9ea0.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 25px 20px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .product-icon {
+      font-size: 60px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .product-name {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      min-height: 40px;
+    }
+
+    .product-price {
+      font-size: 20px;
+      font-weight: 700;
+      color: #27ae60;
+      margin-bottom: 20px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,123,255,0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #0056b3;
+      box-shadow: 0 6px 15px rgba(0,86,179,0.6);
+    }
+
+    @media (max-width: 700px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1><i class="fas fa-store"></i> Tienda Online</h1>
+
+  <div class="products">
+    <div class="product-card">
+      <i class="fas fa-laptop-code product-icon"></i>
+      <div class="product-name">Laptop Gamer</div>
+      <div class="product-description">Potente laptop para gaming con gráficos de última generación.</div>
+      <div class="product-price">$1,200 USD</div>
+      <a href="#" class="buy-btn"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    </div>
+
+    <div class="product-card">
+      <i class="fas fa-headphones-alt product-icon"></i>
+      <div class="product-name">Auriculares Bluetooth</div>
+      <div class="product-description">Auriculares inalámbricos con cancelación activa de ruido.</div>
+      <div class="product-price">$150 USD</div>
+      <a href="#" class="buy-btn"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    </div>
+
+    <div class="product-card">
+      <i class="fas fa-camera-retro product-icon"></i>
+      <div class="product-name">Cámara Digital</div>
+      <div class="product-description">Captura tus momentos con alta definición y zoom óptico.</div>
+      <div class="product-price">$650 USD</div>
+      <a href="#" class="buy-btn"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    </div>
+  </div>
+</body>
+</html>

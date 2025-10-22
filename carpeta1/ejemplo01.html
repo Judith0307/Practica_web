@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de Productos</title>
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .product-list {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 320px;
+      padding: 20px 30px;
+    }
+    .product-list h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      color: #555;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    li i {
+      color: #007bff;
+      margin-right: 15px;
+      font-size: 22px;
+      min-width: 25px;
+      text-align: center;
+    }
+    li:hover {
+      color: #007bff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <h2>Productos</h2>
+    <ul>
+      <li><i class="fa-solid fa-laptop"></i> Laptop</li>
+      <li><i class="fa-solid fa-mobile-screen-button"></i> Smartphone</li>
+      <li><i class="fa-solid fa-headphones"></i> Auriculares</li>
+      <li><i class="fa-solid fa-watch-smart"></i> Smartwatch</li>
+      <li><i class="fa-solid fa-camera"></i> Cámara</li>
+    </ul>
+  </div>
+</body>
+</html>
