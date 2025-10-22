@@ -2,7 +2,7 @@
 //determina si es mayor de edad o menor de edad
 let edad = 18;
 if (edad >= 18){
-    console.log("Eres mayor de edad");
+    console.log("Eres mayor de edad"); 
 } else {
     console.log("Eres menor de edad");
 }
