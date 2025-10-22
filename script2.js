@@ -18,4 +18,4 @@ console.log("Persona: ", persona.nombre);
 console.log("Persona: ", persona.apellido);
 console.log("Persona: ", persona.direccion);
 console.log("Persona: ", persona.edad1);
-console.log("Persona: ", persona.telefono);
+console.log("Persona: ", persona.telefono); 
