@@ -8,7 +8,7 @@ let miPromesa = new Promise(function(resolve, reject) {
         reject("Error en la operación.");
     }
 });
-
+ 
 miPromesa
     .then(function(mensaje) {
         console.log(mensaje);
